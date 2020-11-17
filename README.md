@@ -1,1 +1,1 @@
-# HybridProject
+# ResProj
