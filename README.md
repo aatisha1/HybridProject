@@ -1,3 +1,39 @@
-# HybridTestingAutomationFramework
-This is a project that uses hybrid testing automation framework for testing a website. Here, different classes are stored in separate packages according to their functioning.Page Objects, Utilities, Config Files, and Test Cases are a part of implementation. TestNG.xml and pom.xml are a part of execution is responsible for continuous integration. ‘Page Objects’ class contains the objects of the application needed for different scenarios. Here, it is for the login scenario and adds the customer scenario. ‘Test Cases’ contain 3 different parts: setup method, test method, and tear down method. The set up method is for defining pre-requisites and should be executed before class and the tear down method should be executed after class and commands for exit are mentioned here. These are the common methods for every test case and are written in base class. ‘Utilities’ are supported files for every test case and without it; it is not possible to write even a single test case. ReadConfig.java class is used to read the data from the config.properties file. It directly calls the data from that file. Reporting.java file is created to receive the test output along with the time stamp that includes the exact date and time of the test case execution.  ‘Config files’ contain the files that are changed if anything in the future needs to be added. It contains all the files that contain data of the utility classes like log4j.properties include the data for generating the logs and config.properties file include the data of the application and application’s URL. 
-‘TestNG.xml’ file is a suite that contains all the test case classes. Here, only test cases are written because the methods for executing the scenarios are written in the test case class. In the ‘pom.xml’ file, dependencies are added and these dependencies download jar files automatically and associate them with the maven project. In the future, there is only a need to change the version of dependency, not the whole file. The dependencies include artifacts and versions of the particular unit.
+# Hybrid Testing Automation Framework
+This is a project that uses hybrid testing automation framework for testing a website. Here, different classes are stored in separate packages according to their functioning. Test automation framework is an execution environment for automated tests. It is the overall system in which our tests will be automated.I have done the testing of a demo website http://demo.guru99.com/ using hybrid testing automation framework. 
+In this approach, the attempt is to build a lot of applications independent reusable keyword components so that they can directly used for another web application without spending any extra effort. With this framework in place, whenever we need to automate a web based application, we would not need to start from scratch, but use the application independent keyword components to the extent possible and create application specific components for the specific needs.
+# Tools
+Eclipse
+Java
+TestNG
+pom.xml
+Selenium WebDriver
+Log4j
+# Framework Structure
+The framework consists of the following components:
+com.ResearchProj.PageObjects
+  AddCustomerPage.java
+  LoginPage.java
+com.ResearchProj.TestCases
+  BaseClass.java
+  TC_LoginTest_01.java
+  TC_LoginDDT_02.java
+  TC_AddCustomerPage_03.java
+com.ResearchProj.TestData
+  LoginData.xlsx
+com.ResearchProj.Utilities
+  ReadConfig.java
+  Reporting.java
+  XLUtils.java
+config.properties
+# Drivers
+# Screenshots
+# Logs
+# Test Output
+extent-config.xml
+log4j.properties
+pom.xml
+TestNG.xml
+The test can be run through both pom.xml and TestNG.xml files.
+
+
+
