@@ -33,7 +33,9 @@ The framework consists of the following components:
 * log4j.properties
 * pom.xml
 * TestNG.xml
-The test can be run through both pom.xml and TestNG.xml files.
+* The test can be run through both pom.xml and TestNG.xml files.
+* Open pom.xml file -> Right Click-> Run As -> Maven Test
+* Open TestNG.xml file -> Right Click-> Run As -> TestNG Suite
 
 
 
